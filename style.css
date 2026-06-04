@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d4d9fb 0%, #e8d5f5 100%);
+}
+
+.main-container {
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estilização da Paginação */
+.swiper-pagination {
+    bottom: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Estilo Base dos Pontos */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 2px solid #fff;
+    opacity: 0.8;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estilo do Ponto Ativo (Pílula) */
+.swiper-pagination-bullet-active {
+    width: 40px;
+    background: #7fb4ff; /* Azul suave conforme o print */
+    border-color: #7fb4ff;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+/* Efeito de hover para interatividade */
+.swiper-pagination-bullet:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
